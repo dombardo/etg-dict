@@ -5,8 +5,6 @@ pre: ""
 chapter: true
 ---
 
-### Chapter 1
-
 # Horse
 
 The Horse object defines attributes of an equid.
