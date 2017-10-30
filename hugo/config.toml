@@ -1,15 +1,13 @@
-baseURL = "/"
+baseurl = "https://www.equinetech.org/dict"
 languageCode = "en-US"
 defaultContentLanguage = "en"
-
-title = "Hugo Learn Documentation"
+title = "etg data dictionary"
 theme = "hugo-theme-learn"
-themesdir = "../.."
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
+  # editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
   description = "Documentation for Hugo Learn Theme"
   author = "Mathieu Cornic"
   showVisitedLinks = true
@@ -23,7 +21,7 @@ title = "Documentation for Hugo Learn Theme"
 weight = 1
 languageName = "English"
 
-[[Languages.en.menu.shortcuts]] 
+[[Languages.en.menu.shortcuts]]
 name = "<i class='fa fa-github'></i> Github repo"
 identifier = "ds"
 url = "https://github.com/matcornic/hugo-theme-learn"
