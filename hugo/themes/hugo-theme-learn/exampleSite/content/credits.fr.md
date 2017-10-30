@@ -6,8 +6,8 @@ disableToc: true
 ## Contributeurs
 
 Merci à eux <i class="fa fa-heart"></i> de rendre le monde Open Source meilleur  !
-
-{{% ghcontributors "https://api.github.com/repos/matcornic/hugo-theme-learn/contributors?per_page=100" %}}
+<!-- 
+{{% ghcontributors "https://api.github.com/repos/matcornic/hugo-theme-learn/contributors?per_page=100" %}} -->
 
 Et un grand merci à [@vjeantet](https://github.com/vjeantet) pour son travail sur [docdock](https://github.com/vjeantet/hugo-theme-docdock), un fork de _hugo-theme-learn_. La v2.0.0 du thème est en grande partie inspirée de son travail.
 
@@ -25,4 +25,3 @@ Et un grand merci à [@vjeantet](https://github.com/vjeantet) pour son travail s
 
 * [Netlify](https://www.netlify.com) - Déploiement continue et hébergement de cette documentation
 * [Hugo](https://gohugo.io/)
-
