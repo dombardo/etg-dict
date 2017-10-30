@@ -1,15 +1,19 @@
 ---
-title: Identification
+title: identification
 weight: 5
 ---
 
-Attribute 		| Type 		| Example 			| Description
---------- 		| ------- 	| ----------- 		|	-----------
-stableName 		| string 	| The Deer 			| a name the horse is known by on a day-to-day basis
-stableNameAKA 	| string[] | Donnie, Donnerd, Rhonda | additional common names  
-uelnID 			| string 	| 25000100155928M	| [universal equine life number](http://inside.fei.org/fei/veterinarians/passports/ueln)
-rideAlertID 	| string 	|					| a unique code from [RideAlert](http://www.ridealert.us/)
-registryInfo	| registryInfo[]	|					|
+### Attributes
+
+Attribute     | Type 		       | Example 			| Description
+---------     | ------- 	     | ----------- 	|	-----------
+stableName 		| string 	       | The Deer 		| a name the horse is known by on a day-to-day basis
+stableNameAKA | string[]       | Donnie, Donnerd, Rhonda | additional common names  
+uelnID 			  | string 	       | 25000100155928M	| [universal equine life number](http://inside.fei.org/fei/veterinarians/passports/ueln)
+rideAlertID 	| string 	       |					    | a unique code from [RideAlert](http://www.ridealert.us/)
+registryInfo	| registryInfo[] |					    |
+
+### Code
 
 ```csharp
 string BarnName { get; set; }
