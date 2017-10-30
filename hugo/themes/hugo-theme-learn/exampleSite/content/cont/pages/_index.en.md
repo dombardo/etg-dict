@@ -11,7 +11,7 @@ In **Hugo**, pages are the core of your site. Once it is configured, pages are d
 Organize your site like [any other Hugo project](https://gohugo.io/content/organization/). Typically, you will have a *content* folder with all your pages.
 
     content
-    ├── level-one 
+    ├── level-one
     │   ├── level-two
     │   │   ├── level-three
     │   │   │   ├── level-four
@@ -106,7 +106,7 @@ post = ""
 chapter = false
 # Hide a menu entry by setting this to true
 hidden = false
-# Display name of this page modifier. If set, it will be displayed in the footer. 
+# Display name of this page modifier. If set, it will be displayed in the footer.
 LastModifierDisplayName = ""
 # Email of this page modifier. If set with LastModifierDisplayName, it will be displayed in the footer
 LastModifierEmail = ""
