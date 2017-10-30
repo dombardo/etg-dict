@@ -3,8 +3,6 @@ title: Identification
 weight: 5
 ---
 
-## Identification
-
 Attribute 		| Type 		| Example 			| Description
 --------- 		| ------- 	| ----------- 		|	-----------
 stableName 		| string 	| The Deer 			| a name the horse is known by on a day-to-day basis

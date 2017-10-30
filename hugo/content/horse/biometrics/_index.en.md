@@ -3,8 +3,6 @@ title: biometrics
 weight: 15
 ---
 
-## Biometrics
-
 Attribute       | Type      | Description
 ---------       | -------   | -----------
 foalDate        | timestamp | March 30, 1970

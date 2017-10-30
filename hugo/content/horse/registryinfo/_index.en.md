@@ -3,8 +3,6 @@ title: registryInfo
 weight: 10
 ---
 
-## registryInfo
-
 Attribute 		| Type 		| Example 			| Description
 --------- 		| ------- 	| ----------- 		| -----------
 registryOrgID 	| string 	| 					| the breed registry granting the breedID or formalName
