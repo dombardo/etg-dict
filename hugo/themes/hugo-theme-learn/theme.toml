@@ -4,7 +4,7 @@
 name = "Learn"
 license = "MIT"
 licenselink = "https://github.com/matcornic/hugo-theme-learn/blob/master/LICENSE.md"
-description = "Documentation theme for Hugo, based on Grav Learn theme"
+description = ""
 homepage = "https://github.com/matcornic/hugo-theme-learn/"
 repo = "https://github.com/matcornic/hugo-theme-learn"
 tags = ["documentation", "grav", "learn", "doc", "search"]

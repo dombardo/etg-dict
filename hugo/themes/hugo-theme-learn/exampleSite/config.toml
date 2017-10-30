@@ -10,7 +10,7 @@ defaultContentLanguageInSubdir= true
 
 [params]
   editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "Documentation for Hugo Learn Theme"
+  description = ""
   author = "Mathieu Cornic"
   showVisitedLinks = true
 
@@ -19,11 +19,11 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
 [Languages.en]
-title = "Documentation for Hugo Learn Theme"
+title = ""
 weight = 1
 languageName = "English"
 
-[[Languages.en.menu.shortcuts]] 
+[[Languages.en.menu.shortcuts]]
 name = "<i class='fa fa-github'></i> Github repo"
 identifier = "ds"
 url = "https://github.com/matcornic/hugo-theme-learn"
