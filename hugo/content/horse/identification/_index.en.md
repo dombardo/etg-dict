@@ -22,8 +22,6 @@ More formally, the [UELN](http://inside.fei.org/fei/veterinarians/passports/ueln
 
 RideAlert is a company which administers an emergency notification system; a centerpiece of which is (yet another) universal / unique ID. Where present, it may be a useful attribute for matching data across systems.
 
-
-
 ## Code
 
 #### C-Sharp

@@ -8,9 +8,9 @@ defaultContentLanguageInSubdir= true
 
 [params]
   # editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "Documentation for Hugo Learn Theme"
-  author = "Mathieu Cornic"
-  showVisitedLinks = true
+  description = ""
+  author = ""
+  showVisitedLinks = false
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
