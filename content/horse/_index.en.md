@@ -1,5 +1,5 @@
 ---
-title: Horse
+title: horse
 weight: 5
 pre: ""
 chapter: true

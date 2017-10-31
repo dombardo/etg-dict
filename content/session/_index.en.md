@@ -1,6 +1,6 @@
 ---
 title: Session
-weight: 5
+weight: 10
 pre: ""
 chapter: true
 ---

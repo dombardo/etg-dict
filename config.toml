@@ -11,6 +11,8 @@ defaultContentLanguageInSubdir= true
   description = ""
   author = ""
   showVisitedLinks = false
+  themeVariant = "mine"
+  disableSearch = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]

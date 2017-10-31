@@ -7,8 +7,9 @@
     {{ partial "meta.html" . }}
     {{ partial "favicon.html" . }}
     <title>{{ .Title }} :: {{ .Site.Title }}</title>
-    
+
     {{ $assetBusting := not .Site.Params.disableAssetsBusting }}
+
     <link href="{{"css/nucleus.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
     <link href="{{"css/font-awesome.min.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
     <link href="{{"css/hybrid.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
@@ -20,11 +21,15 @@
     {{with .Site.Params.themeVariant}}
       <link href="{{(printf "css/theme-%s.css" .) | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
     {{end}}
+    <link rel="stylesheet" href="{{"css/bootstrap.min.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" />
+    <link rel="stylesheet" href="{{"css/now-ui-kit.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" />
+    <link rel="stylesheet" href="{{"css/index.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" />
+    <link rel="stylesheet" href="https://use.typekit.net/zcu3coo.css">
 
     <script src="{{"js/jquery-2.x.min.js"| relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
-    
+  
     <style type="text/css">
-      :root #header + #content > #left > #rlblock_left{ 
+      :root #header + #content > #left > #rlblock_left{
           display:none !important;
       }
       {{ if .Site.Params.disableInlineCopyToClipBoard }}
@@ -35,8 +40,67 @@
     </style>
     {{ partial "custom-header.html" . }}
   </head>
+
   <body class="" data-url="{{ .RelPermalink }}">
+
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg bg-primary fixed-top " >
+          		<div class="container">
+
+          				<div class="navbar-translate">
+
+          						<button class="navbar-toggler navbar-toggler" data-toggle="collapse" type="button"  data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          								<span class="navbar-toggler-bar bar1"></span>
+          								<span class="navbar-toggler-bar bar2"></span>
+          								<span class="navbar-toggler-bar bar3"></span>
+          						</button>
+
+          				</div>
+
+                  <div class="collapse navbar-collapse justify-content-center">
+                				<div class=" justify-content-center" >
+                						<ul class="navbar-nav">
+                							<li class="nav-item">
+                									<a class="nav-link" href="./api.html">
+                											<i class="fa fa-exchange"></i>
+                											<p>API</p>
+                									</a>
+                								</li>
+                								<li class="nav-item">
+                										<a class="nav-link" href="./datadict.html">
+                												<i class="fa fa-sitemap"></i>
+                												<p>DataDict</p>
+                										</a>
+                								</li>
+                								<li class="nav-item">
+                										<a class="nav-link" href="https://github.com/equinetech" target="_blank">
+                												<i class="fa fa-github"></i>
+                												<p>Github</p>
+                										</a>
+                								</li>
+                								<li class="nav-item">
+                										<a class="nav-link" href="https://equinetech.slack.com" target="_blank">
+                												<i class="fa fa-slack"></i>
+                												<p>Slack</p>
+                										</a>
+                								</li>
+                								<li class="nav-item">
+                										<a class="nav-link" href="mailto:hello@equinetech.org">
+                												<i class="fa fa-envelope"></i>
+                												<p>Contact Us</p>
+                										</a>
+                								</li>
+                						</ul>
+                				</div>
+
+                		</div>
+                  </div>
+          	  </nav>
+          	<!-- End Navbar -->
+
     {{ partial "menu.html" . }}
+
+
         <section id="body">
         <div id="overlay"></div>
         <div class="padding highlightable sticky-parent">
@@ -66,7 +130,7 @@
                   <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
                   {{ end }}
                   <span class="links">
-                    {{ template "breadcrumb" dict "page" . "value" .Title }}   
+                    {{ template "breadcrumb" dict "page" . "value" .Title }}
                   </span>
                 </div>
                 {{ if $toc }}
@@ -88,7 +152,7 @@
           {{$parent := .page.Parent }}
           {{ if $parent }}
             {{ $value := (printf "<a href='%s'>%s</a> > %s" $parent.URL $parent.Title .value) }}
-            {{ template "breadcrumb" dict "page" $parent "value" $value }} 
+            {{ template "breadcrumb" dict "page" $parent "value" $value }}
           {{else}}
             {{.value|safeHTML}}
           {{end}}

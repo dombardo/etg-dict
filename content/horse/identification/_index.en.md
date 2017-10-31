@@ -22,6 +22,14 @@ More formally, the [UELN](http://inside.fei.org/fei/veterinarians/passports/ueln
 
 RideAlert is a company which administers an emergency notification system; a centerpiece of which is (yet another) universal / unique ID. Where present, it may be a useful attribute for matching data across systems.
 
+Many horses have a formal name and ID number as part of a breed registry, be it a Jockey Club name and ID for a racing Thoroughbred or a pedigree name and ID for an Andalusian. Often that ID will be the best way to uniquely identify a particular animal. However, because horses can belong to more than one registry, we do not simply have a field for BreedID, instead we include an array of registryInfo objects.
+
+## Open Questions
+
+{{% notice note %}}
+What other non-breed-registry ID systems exist?
+{{% /notice %}}
+
 ## Code
 
 #### C-Sharp
@@ -32,7 +40,7 @@ string FormalName { get; set; }
 ```
 
 #### Obj-C
-```objective_c
+```obj-c
 NSString *barnName;
 NSArray<NSString *> *barnNameAKA;
 NSString *formalName;
