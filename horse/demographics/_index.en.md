@@ -7,8 +7,8 @@ weight: 6
 
 Attribute         | Type 		      | Example 		            | Description
 ---------         | ------- 	    | -----------             |	-----------
-foalDate 		      | timestamp 	  | The Deer 		            |
-deathDate         | timestamp     | Donnie, Donnerd, Rhonda |
+foalDate 		      | timestamp 	  |                         |
+deathDate         | timestamp     |                         |
 [sex]             |               |                         |
 [breed]           |               |                         |
 [color]           |               |                         |
