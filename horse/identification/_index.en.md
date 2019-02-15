@@ -19,8 +19,6 @@ While keeping [some excellent rules](http://www.kalzumeus.com/2010/06/17/falseho
 
 More formally, the [UELN](http://inside.fei.org/fei/veterinarians/passports/ueln) is the current best attempt at a truly universal and unique coding identifier. Not all horses will have a UELN but for those that do it is the best way to match data across systems. The UELN is composed of sub-codes, and various systems will decompose and store those codes separately. However it is not necessary to provide attributes for the subcodes in this common standard.
 
-RideAlert is a company which administers an emergency notification system; a centerpiece of which is (yet another) universal / unique ID. Where present, it may be a useful attribute for matching data across systems.
-
 Many horses have a formal name and ID number as part of a breed registry, be it a Jockey Club name and ID for a racing Thoroughbred or a pedigree name and ID for an Andalusian. Often that ID will be the best way to uniquely identify a particular animal. However, because horses can belong to more than one registry, we do not simply have a field for BreedID, instead we include an array of registryInfo objects.
 
 ## Open Questions
