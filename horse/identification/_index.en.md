@@ -11,7 +11,6 @@ stableName 		       | string 	      | The Deer 		            | a name the horse 
 stableNameAdditional | string[]       | Donnie, Donnerd, Rhonda | additional common names  
 stableNameFormer     | string[]       | Foal 12, Mr. Whiskers   | previous common names  
 uelnID 			         | string 	      | 25000100155928M	        | [universal equine life number](http://inside.fei.org/fei/veterinarians/passports/ueln)
-rideAlertID 	       | string 	      |					                | a unique code from [RideAlert](http://www.ridealert.us/)
 registryInfo	       | [registryInfo](/horse/registryinfo)[] |					                | an array of [registryInfo](/horse/registryinfo) objects
 
 ## Discussion
